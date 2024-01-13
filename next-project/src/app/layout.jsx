@@ -5,7 +5,7 @@ import Navebar from '@/components/Navbar/Navebar';
 import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
-const montserrat = Montserrat({ subsets: ['latin'] });
+const BodyFont = Montserrat({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navebar />
+        <h1 className={BodyFont.className}>Hello</h1>
         <div className="FullHeight"></div>
         {children}
         <Footer />
