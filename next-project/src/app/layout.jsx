@@ -1,8 +1,9 @@
-import { Inter } from 'next/font/google';
+import { Inter, Montserrat } from 'next/font/google';
 import './globals.css';
 import './styles.css';
 
 const inter = Inter({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Create Next App',
@@ -29,6 +30,8 @@ export default function RootLayout({ children }) {
             </li>
           </ul>
         </nav>
+
+        <h1 className={montserrat.className}>Hello</h1>
         {children}
       </body>
     </html>
