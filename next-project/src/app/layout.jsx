@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navebar />
-        <h1 className={montserrat.className}>Hello</h1>
+        <div className="FullHeight"></div>
         {children}
         <Footer />
       </body>
