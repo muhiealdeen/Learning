@@ -1,6 +1,16 @@
-/* .container {
-  background-color: aqua;
-} */
+.container {
+  /* background-color: aqua; */
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo {
+  font-weight: bold;
+  font-size: 22px;
   color: yellow;
+}
+.links {
+  display: flex;
+  gap: 10px;
 }
