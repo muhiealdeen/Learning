@@ -1,22 +1,20 @@
+import Link from 'next/link';
+import styles from './Navbar.module.css';
+import { links } from './data';
+
 export default function Navebar() {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Recipes</a>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <div className={styles.container}>
+      <Link href="/" className={styles.logo}>
+        Dish Discovery
+      </Link>
+      <div className={styles.links}>
+        {links.map((link) => (
+          <Link key={link.id} href={link.url} className={styles.link}>
+            {link.title}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
