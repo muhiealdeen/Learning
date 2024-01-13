@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -32,4 +35,47 @@ nav a {
 
 nav a:hover {
   color: #ffcc00;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section h2 {
+  color: #ffcc00;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #555;
+}
+
+.copyright p {
+  font-size: 14px;
 }
