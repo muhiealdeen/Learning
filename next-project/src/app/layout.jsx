@@ -1,6 +1,6 @@
 import { Inter, Montserrat } from 'next/font/google';
 import './globals.css';
-import './styles.css';
+
 import Navebar from '@/components/Navbar/Navebar';
 import Footer from '@/components/Footer/Footer';
 
