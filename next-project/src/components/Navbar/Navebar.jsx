@@ -2,6 +2,7 @@ import Link from 'next/link';
 import styles from './Navbar.module.css';
 import { links } from './data';
 import { Montserrat } from 'next/font/google';
+import Button from '../Button/Button';
 
 const logoFont = Montserrat({
   subsets: ['latin'],
@@ -20,6 +21,7 @@ export default function Navebar() {
             {link.title}
           </Link>
         ))}
+        <Button />
       </div>
     </div>
   );
