@@ -1,26 +1,21 @@
 import Link from 'next/link';
 import styles from './Navbar.module.css';
 import { links } from './data';
-import { Montserrat } from 'next/font/google';
-import Button from '../Button/Button';
-
-const logoFont = Montserrat({
-  subsets: ['latin'],
-  weight: ['900'],
-});
+import Button from '../../elements/Button/Button';
+import Logo from '@/elements/Logo/Logo';
 
 export default function Navebar() {
   return (
     <div className={styles.container}>
-      <Link href="/" className={`${styles.logo} ${logoFont.className}`}>
-        Dish Discovery
-      </Link>
+      <Logo />
+
       <div className={styles.links}>
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
           </Link>
         ))}
+
         <Button />
       </div>
     </div>
