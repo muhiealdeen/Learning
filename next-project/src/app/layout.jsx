@@ -5,7 +5,7 @@ import Navebar from '@/components/Navbar/Navebar';
 import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
-const BodyFont = Montserrat({ subsets: ['latin'] });
+const BodyFont = Montserrat({ subsets: ['latin'], weight: ['400', '900'] });
 
 export const metadata = {
   title: 'Create Next App',

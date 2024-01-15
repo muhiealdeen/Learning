@@ -1,7 +1,10 @@
-/* :root {
-  background-color: black;
-  color: aliceblue;
-} */
+:root {
+  /* background-color: black;
+  color: aliceblue; */
+  --color-primery: #00ffff;
+  --color-secondery: #bbb;
+  --size-border-radius: 5px;
+}
 
 * {
   box-sizing: border-box;

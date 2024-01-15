@@ -20,7 +20,7 @@ export default function Home() {
         <button className={styles.button}>recipes</button>
       </div>
       <div className={styles.col}>
-        <Image src={breakfast} alt="breakfast" />
+        <Image src={breakfast} alt="breakfast" className={styles.img} />
       </div>
     </div>
   );
