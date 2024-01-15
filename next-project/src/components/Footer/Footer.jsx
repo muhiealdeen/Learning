@@ -16,7 +16,7 @@ export default function Footer() {
             width={20}
             height={20}
             className={styles.icon}
-            alt="Dish Discoverry Facebook link"
+            alt={`Dish Discoverry ${media.name} link`}
           />
         ))}
       </div>
