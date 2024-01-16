@@ -1,3 +1,11 @@
 .logout {
-  background-color: #00ffff;
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--color-primery);
+  border: none;
+  border-radius: var(--size-border-radius);
+  width: max-content;
+  color: var(--color-secondery);
+  text-transform: uppercase;
+  font-weight: bold;
 }

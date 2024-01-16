@@ -7,8 +7,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 2px;
+  position: relative;
 }
 .icon {
+  font-size: 22px;
 }
 .switcher {
+  width: 25px;
+  aspect-ratio: 1/1;
+  background-color: var(--color-primery);
+  border-radius: 50%;
+  position: absolute;
 }
