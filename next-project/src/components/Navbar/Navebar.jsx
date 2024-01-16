@@ -3,6 +3,7 @@ import styles from './Navbar.module.css';
 import { links } from './data';
 import Button from '../../elements/Button/Button';
 import Logo from '@/elements/Logo/Logo';
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 
 export default function Navebar() {
   return (
@@ -10,6 +11,7 @@ export default function Navebar() {
       <Logo />
 
       <div className={styles.links}>
+        <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
