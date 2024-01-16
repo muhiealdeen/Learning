@@ -18,4 +18,5 @@
   background-color: var(--color-primery);
   border-radius: 50%;
   position: absolute;
+  cursor: pointer;
 }
