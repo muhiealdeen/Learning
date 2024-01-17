@@ -4,9 +4,9 @@ import styles from './page.module.css';
 
 export default function Recipes() {
   return (
-    <div className={styles.container}>
-      <Link href="/id" className={styles.recipes}>
-        <div className={styles.container}>
+    <div className={styles.mainContainer}>
+      <Link href="/recipes/id" className={styles.recipes}>
+        <div className={styles.imageContainer}>
           <Image
             // key={media.id}
             // src={`/images/icons/${media.name}.png`}
@@ -15,18 +15,18 @@ export default function Recipes() {
             }
             width={350}
             height={250}
-            className={styles.icon}
+            className={styles.image}
             // alt={`Dish Discoverry ${media.name} link`}
             alt="recipe image"
           />
-          <div className={styles.content}>
-            <h1 className={styles.title}>recipe name</h1>
-            <p>recipe ingredient</p>
-          </div>
+        </div>
+        <div className={styles.content}>
+          <h1 className={styles.title}>recipe name</h1>
+          <p className={styles.text}>recipe ingredient</p>
         </div>
       </Link>
-      <Link href="/id" className={styles.recipes}>
-        <div className={styles.container}>
+      <Link href="/recipes/id" className={styles.recipes}>
+        <div className={styles.imageContainer}>
           <Image
             // key={media.id}
             // src={`/images/icons/${media.name}.png`}
@@ -35,18 +35,18 @@ export default function Recipes() {
             }
             width={350}
             height={250}
-            className={styles.icon}
+            className={styles.image}
             // alt={`Dish Discoverry ${media.name} link`}
             alt="recipe image"
           />
-          <div className={styles.content}>
-            <h1 className={styles.title}>recipe name</h1>
-            <p>recipe ingredient</p>
-          </div>
+        </div>
+        <div className={styles.content}>
+          <h1 className={styles.title}>recipe name</h1>
+          <p className={styles.text}>recipe ingredient</p>
         </div>
       </Link>
-      <Link href="/id" className={styles.recipes}>
-        <div className={styles.container}>
+      <Link href="/recipes/id" className={styles.recipes}>
+        <div className={styles.imageContainer}>
           <Image
             // key={media.id}
             // src={`/images/icons/${media.name}.png`}
@@ -55,18 +55,18 @@ export default function Recipes() {
             }
             width={350}
             height={250}
-            className={styles.icon}
+            className={styles.image}
             // alt={`Dish Discoverry ${media.name} link`}
             alt="recipe image"
           />
-          <div className={styles.content}>
-            <h1 className={styles.title}>recipe name</h1>
-            <p>recipe ingredient</p>
-          </div>
+        </div>
+        <div className={styles.content}>
+          <h1 className={styles.title}>recipe name</h1>
+          <p className={styles.text}>recipe ingredient</p>
         </div>
       </Link>
-      <Link href="/id" className={styles.recipes}>
-        <div className={styles.container}>
+      <Link href="/recipes/id" className={styles.recipes}>
+        <div className={styles.imageContainer}>
           <Image
             // key={media.id}
             // src={`/images/icons/${media.name}.png`}
@@ -75,14 +75,14 @@ export default function Recipes() {
             }
             width={350}
             height={250}
-            className={styles.icon}
+            className={styles.image}
             // alt={`Dish Discoverry ${media.name} link`}
             alt="recipe image"
           />
-          <div className={styles.content}>
-            <h1 className={styles.title}>recipe name</h1>
-            <p>recipe ingredient</p>
-          </div>
+        </div>
+        <div className={styles.content}>
+          <h1 className={styles.title}>recipe name</h1>
+          <p className={styles.text}>recipe ingredient</p>
         </div>
       </Link>
     </div>
