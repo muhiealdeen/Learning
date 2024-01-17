@@ -1,0 +1,23 @@
+.recipes {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+  border: 2px solid #555;
+  border-radius: 15px;
+}
+.recipes:nth-child(even) {
+  flex-direction: row-reverse;
+  background-color: black;
+}
+.image {
+  object-fit: cover;
+  border-radius: 15px;
+}
+.title {
+  font-weight: 700;
+}
+.text {
+  font-size: 18px;
+  color: #999;
+}

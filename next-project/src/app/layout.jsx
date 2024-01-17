@@ -6,7 +6,10 @@ import Footer from '@/components/Footer/Footer';
 import { ThemeProvider } from '@/context/ThemeContext';
 
 const inter = Inter({ subsets: ['latin'] });
-const BodyFont = Montserrat({ subsets: ['latin'], weight: ['400', '900'] });
+const BodyFont = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '700', '900'],
+});
 
 export const metadata = {
   title: 'Create Next App',
