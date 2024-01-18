@@ -6,7 +6,7 @@ export default function Recipe() {
       <header className={styles.header}>
         <dev className={styles.info}>
           <h1 className={styles.title}>recipe name</h1>
-          <p className={styles.desc}>XXXXXXXXX</p>
+          <p className={styles.mealType}>Meal Type : XXXXXXXXX</p>
         </dev>
         <div className={styles.imageContainer}>
           <Image
@@ -26,12 +26,18 @@ export default function Recipe() {
 
       <div className={styles.content}>
         <p className={styles.text}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-          ullam corporis natus voluptas iure possimus doloremque itaque, earum
-          amet voluptates maxime eius est distinctio animi at nemo veritatis ea
-          consequuntur excepturi. Delectus quo, iure possimus non qui obcaecati
-          temporibus dolor distinctio tempore dolorum eaque praesentium vero.
-          Sint dicta deleniti ipsam!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+          numquam dolore eos facere. Aliquam quod distinctio ex deserunt dicta
+          quos repellat eum, assumenda a ipsa sit nesciunt illo qui itaque
+          officiis pariatur veritatis eligendi sapiente reprehenderit dolorum ab
+          quaerat perspiciatis non. Accusamus distinctio tempora deserunt.
+          Molestiae quas nam error, eos ex est quidem labore cumque explicabo,
+          reiciendis sequi eius impedit dicta totam reprehenderit culpa ratione?
+          Nam quasi eaque est molestias, tempore aperiam qui cumque, fugiat quia
+          consectetur amet aut dicta voluptatem repellat sint sunt incidunt
+          aliquam temporibus voluptatum ut numquam similique exercitationem?
+          Corporis exercitationem excepturi, error laboriosam corrupti
+          provident?
         </p>
       </div>
     </div>

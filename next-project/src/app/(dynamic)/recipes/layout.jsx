@@ -1,7 +1,7 @@
 export default function RecipesLayout({ children }) {
   return (
     <div>
-      RecipesLayout
+      {/* RecipesLayout */}
       {children}
     </div>
   );
