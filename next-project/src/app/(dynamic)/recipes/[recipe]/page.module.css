@@ -1,15 +1,21 @@
+.container {
+  /* margin: auto 50px; */
+}
 .header {
 }
 .info {
 }
 .title {
+  font-size: 40px;
+  margin-bottom: 10px;
 }
-.desc {
+.mealType {
+  font-size: 18px;
 }
 .imageContainer {
   position: relative;
   height: 300px;
-  margin: 25px 0;
+  margin: 25px 50px;
 }
 
 .image {
@@ -17,8 +23,20 @@
   border-radius: 15px;
 }
 .author {
+  position: absolute;
+  background-color: var(--color-primery);
+  color: black;
+  padding: 5px 10px;
+  bottom: 0;
+  right: 0;
 }
 .content {
+  margin: auto 50px;
 }
-.teext {
+
+.text {
+  font-size: 18px;
+  line-height: 25px;
+  columns: 2;
+  text-align: justify;
 }
