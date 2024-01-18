@@ -1,0 +1,24 @@
+.header {
+}
+.info {
+}
+.title {
+}
+.desc {
+}
+.imageContainer {
+  position: relative;
+  height: 300px;
+  margin: 25px 0;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 15px;
+}
+.author {
+}
+.content {
+}
+.teext {
+}
