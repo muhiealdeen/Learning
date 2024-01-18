@@ -13,13 +13,14 @@ export default function Recipe() {
             src={
               'https://render.fineartamerica.com/images/rendered/search/print/6.5/8/break/images/artworkimages/medium/1/louisiana-saturday-night-dianne-parks.jpg'
             }
-            width={350}
-            height={250}
+            // width={350}
+            // height={250}
             className={styles.image}
             // alt={`Dish Discoverry ${media.name} link`}
             alt="recipe image"
-            fill={false}
+            fill={true}
           />
+          <span className={styles.author}>Zezo</span>
         </div>
       </header>
 
