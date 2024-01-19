@@ -2,7 +2,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
 
-export default function Recipes() {
+async function getData() {
+  const res = await fetch('https://dummyjson.com/recipes');
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data');
+  }
+
+  return res.json();
+}
+
+export default async function Recipes() {
+  const data = await getData();
+  console.log(data);
   return (
     <div className={styles.mainContainer}>
       <Link href="/recipes/id" className={styles.recipes}>
