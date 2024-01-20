@@ -25,9 +25,7 @@ export default async function Recipes() {
             <Image
               // key={media.id}
               // src={`/images/icons/${media.name}.png`}
-              src={
-                'https://render.fineartamerica.com/images/rendered/search/print/6.5/8/break/images/artworkimages/medium/1/louisiana-saturday-night-dianne-parks.jpg'
-              }
+              src={recipe.image}
               width={350}
               height={250}
               className={styles.image}
@@ -36,8 +34,12 @@ export default async function Recipes() {
             />
           </div>
           <div className={styles.content}>
-            <h1 className={styles.title}>recipe name:{recipe.name}</h1>
-            <p className={styles.text}>recipe ingredient</p>
+            <h1 className={styles.title}>
+              <span>recipe name: </span> {recipe.name}
+            </h1>
+            <p className={styles.text}>
+              recipe ingredient: {recipe.ingredients}
+            </p>
           </div>
         </Link>
       ))}
