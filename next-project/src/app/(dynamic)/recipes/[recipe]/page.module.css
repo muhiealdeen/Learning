@@ -22,7 +22,7 @@
   object-fit: cover;
   border-radius: 15px;
 }
-.author {
+.cuisine {
   position: absolute;
   background-color: var(--color-primery);
   color: black;
@@ -33,10 +33,15 @@
 .content {
   margin: auto 50px;
 }
+.innerContent {
+  padding-top: 30px;
+}
+.interContent h2 {
+  padding-bottom: 10px;
+}
 
 .text {
   font-size: 18px;
   line-height: 25px;
-  columns: 2;
   text-align: justify;
 }
