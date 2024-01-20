@@ -20,7 +20,11 @@ export default async function Recipes() {
   return (
     <div className={styles.mainContainer}>
       {recipes.map((recipe) => (
-        <Link href="/recipes/id" className={styles.recipes} key={recipe.id}>
+        <Link
+          href={`/recipes/${recipe.id}`}
+          className={styles.recipes}
+          key={recipe.id}
+        >
           <div className={styles.imageContainer}>
             <Image
               // key={media.id}
