@@ -14,8 +14,14 @@
   object-fit: cover;
   border-radius: 15px;
 }
+.content {
+  padding: 30px;
+}
 .title {
   font-weight: 700;
+  /* margin: 0 auto; */
+  /* padding: 10px; */
+  /* text-align: center; */
 }
 .text {
   font-size: 18px;
