@@ -1,6 +1,20 @@
 import Image from 'next/image';
 import styles from './page.module.css';
-export default function Recipe() {
+
+async function getData(recipe) {
+  const res = await fetch(`https://dummyjson.com/recipes/${recipe}`);
+
+  if (!res.ok) {
+    throw new Error('Failed to fetch data');
+  }
+
+  return res.json();
+}
+export default async function Recipe({ params }) {
+  // console.log(params.recipe);
+  const data = await getData(params.recipe);
+  console.log(data.name);
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
