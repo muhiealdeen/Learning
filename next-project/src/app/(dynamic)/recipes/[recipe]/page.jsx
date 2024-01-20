@@ -26,7 +26,7 @@ export default async function Recipe({ params }) {
           <Image
             src={recipe.image}
             className={styles.image}
-            alt="recipe image"
+            alt={`Image of ${recipe.name}`}
             fill={true}
           />
           <span className={styles.cuisine}>Cuisine: {recipe.cuisine}</span>
