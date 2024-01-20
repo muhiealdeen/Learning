@@ -12,47 +12,36 @@ async function getData(recipe) {
 }
 export default async function Recipe({ params }) {
   // console.log(params.recipe);
-  const data = await getData(params.recipe);
-  console.log(data.name);
+  const recipe = await getData(params.recipe);
+  console.log(recipe.name);
 
   return (
-    <div className={styles.container}>
-      <header className={styles.header}>
-        <dev className={styles.info}>
-          <h1 className={styles.title}>recipe name</h1>
-          <p className={styles.mealType}>Meal Type : XXXXXXXXX</p>
-        </dev>
+    <div className={styles.recipeContainer}>
+      <header className={styles.recipeHeader}>
+        <div className={styles.info}>
+          <h1 className={styles.title}>{recipe.name}</h1>
+          <p className={styles.mealType}>Meal Type: {recipe.mealType}</p>
+        </div>
         <div className={styles.imageContainer}>
           <Image
-            src={
-              'https://render.fineartamerica.com/images/rendered/search/print/6.5/8/break/images/artworkimages/medium/1/louisiana-saturday-night-dianne-parks.jpg'
-            }
-            // width={350}
-            // height={250}
+            src={recipe.image}
             className={styles.image}
-            // alt={`Dish Discoverry ${media.name} link`}
             alt="recipe image"
             fill={true}
           />
-          <span className={styles.author}>Zezo</span>
+          <span className={styles.cuisine}>Cuisine: {recipe.cuisine}</span>
         </div>
       </header>
 
       <div className={styles.content}>
-        <p className={styles.text}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
-          numquam dolore eos facere. Aliquam quod distinctio ex deserunt dicta
-          quos repellat eum, assumenda a ipsa sit nesciunt illo qui itaque
-          officiis pariatur veritatis eligendi sapiente reprehenderit dolorum ab
-          quaerat perspiciatis non. Accusamus distinctio tempora deserunt.
-          Molestiae quas nam error, eos ex est quidem labore cumque explicabo,
-          reiciendis sequi eius impedit dicta totam reprehenderit culpa ratione?
-          Nam quasi eaque est molestias, tempore aperiam qui cumque, fugiat quia
-          consectetur amet aut dicta voluptatem repellat sint sunt incidunt
-          aliquam temporibus voluptatum ut numquam similique exercitationem?
-          Corporis exercitationem excepturi, error laboriosam corrupti
-          provident?
-        </p>
+        <div className={styles.innerContent}>
+          <h2>Instructions</h2>
+          <p className={styles.text}>{recipe.instructions}</p>
+        </div>
+        <div className={styles.innerContent}>
+          <h2>Ingredients</h2>
+          <p className={styles.text}>{recipe.ingredients}</p>
+        </div>
       </div>
     </div>
   );
