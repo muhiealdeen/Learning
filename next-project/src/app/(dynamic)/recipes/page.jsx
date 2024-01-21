@@ -12,6 +12,11 @@ async function getData() {
   return res.json();
 }
 
+export const metadata = {
+  title: 'Dish Discovery - Recipes',
+  description: 'Navigate the art of cooking with Dish Discovery App.',
+};
+
 export default async function Recipes() {
   const data = await getData();
   const recipes = data.recipes;
