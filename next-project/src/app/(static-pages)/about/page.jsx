@@ -1,3 +1,9 @@
+export const metadata = {
+  title: 'Dish Discovery - About',
+  description:
+    'Unlock the art of culinary creativity with our curated collection of recipes.',
+};
+
 export default function About() {
   return (
     <div className="footer-section">

@@ -10,6 +10,20 @@ async function getData(recipe) {
 
   return res.json();
 }
+
+export async function generateMetadata({ params }) {
+  // read route params
+  const id = params.id;
+
+  // fetch data
+  const recipe = await getData(params.recipe);
+
+  return {
+    title: recipe.name,
+    description: recipe.cuisine,
+  };
+}
+
 export default async function Recipe({ params }) {
   // console.log(params.recipe);
   const recipe = await getData(params.recipe);

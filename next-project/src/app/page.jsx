@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import breakfast from '/public/images/breakfast.svg';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
           cooking tips, and cultural insights, turning every meal into a
           celebration of international cuisine.
         </p>
-        <button className={styles.button}>recipes</button>
+        <Link href={'/recipes'}>
+          <button className={styles.button}>recipes</button>
+        </Link>
       </div>
       <div className={styles.col}>
         <Image src={breakfast} alt="breakfast" className={styles.img} />
