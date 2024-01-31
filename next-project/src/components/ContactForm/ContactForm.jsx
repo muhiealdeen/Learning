@@ -1,4 +1,5 @@
 import styles from './ContactForm.module.css';
+import Link from 'next/link';
 
 const ContactForm = () => {
   return (
@@ -13,7 +14,9 @@ const ContactForm = () => {
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit">Submit</button>
+        <Link href={'/'}>
+          <button type="submit">Submit</button>
+        </Link>
       </form>
     </div>
   );
