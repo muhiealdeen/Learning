@@ -8,7 +8,6 @@ export default function Contact() {
       <p>Email: contact@example.com</p>
       <p>Phone: *********************</p>
 
-      {/* Add the ContactForm component */}
       <ContactForm />
     </div>
   );
