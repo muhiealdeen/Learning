@@ -25,4 +25,5 @@
   color: var(--color-secondery);
   text-transform: uppercase;
   font-weight: bold;
+  width: 100%;
 }
