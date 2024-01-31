@@ -4,6 +4,10 @@
   padding: 20px;
   text-align: center;
 }
+.footerSection p {
+  padding-top: 10px;
+  font-size: 18px;
+}
 
 @media screen and (max-width: 600px) {
   .footerSection {
