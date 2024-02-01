@@ -59,9 +59,13 @@ export default {
   plugins: [],
 }
   -->
-  <div>
-    <h3>This is text element</h3>
-    <P>This is an even longer p tag element</P>
-    <button>Toggle Dark Mode</button>
+  <div class="m-10 rounded-lg bg-white px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black" >
+    <h3 class="text-base font-medium tracking-tight text-slate-900">This is text element</h3>
+    <P class="mt-2 text-sm text-slate-500 ">This is an even longer p tag element</P>
+    <button
+    id="atoggleDark"
+    class="text-blue-900 px-4 py-2 text-sm font-medium mt-8 bg-blue-100 rounded-md"
+    onclick="document.body.classList.toggle('Dark')"
+    >Toggle Dark Mode</button>
   </div>
 </main>
