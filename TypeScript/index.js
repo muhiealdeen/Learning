@@ -1,1 +1,1 @@
-console.log(Math.floor(10.15));
+console.log(Math.floor(10.5));
