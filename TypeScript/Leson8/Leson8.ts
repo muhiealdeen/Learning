@@ -15,9 +15,12 @@
 
 let showMsg = true;
 
-function showDetails(name, age, salary) {
+function showDetails(name: string, age: number, salary: number): string {
+  let test = 10;
+
   if (showMsg) {
-    return `Hello ${name} your age is${age}, Your salary is`;
+    return `Hello ${name} your age is${age}, Your salary is ${salary}, Test Variable${test}`;
   }
+  return ` No data to show`;
 }
 console.log(showDetails('Osama', 40, 5000));
