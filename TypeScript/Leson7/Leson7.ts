@@ -7,4 +7,5 @@ let arrayTwo: string[] = ['A', 'B', 'C', 'D', 'E'];
 
 
 let arrayThree: (number | string)[ ] -[1, 2, 3, 4, 5, "A", "B", "C", "D", "E"];
-let arrayaFor: (number | boolean | string[] | boolean[] | string)[] = [1, 2, true, false, ['A', 'B',], [true, false], 'Osama'];
+let arrayaFor: (number | boolean | string[] | boolean[] | string)[] = [1, 2, true, false, ['A', 'B'], [true, false], 'Osama'];
+let arrayaFive: (number| boolean | ( string | number[])[] | boolean | string)[] = [1, 2, true, false, ['A', 'B', [1, 2, 3, ]], [true, false], 'Osama'];
