@@ -8,7 +8,7 @@ let Name: st = 'John';
 Name = 'Doe';
 
 type standum = string | number;
-let all: standum = 10;
-all = '10';
-all = 100;
-all = true;
+let all1: standum = 10;
+all1 = '10';
+all1 = 100;
+all1 = true;
