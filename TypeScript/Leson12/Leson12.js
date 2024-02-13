@@ -1,8 +1,8 @@
 "use strict";
 let Name = 'John';
 Name = 'Doe';
-let all = 10;
-all = '10';
-all = 100;
-all = true;
+let all1 = 10;
+all1 = '10';
+all1 = 100;
+all1 = true;
 //# sourceMappingURL=Leson12.js.map
