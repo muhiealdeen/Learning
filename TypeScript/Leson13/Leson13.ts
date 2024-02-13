@@ -9,7 +9,11 @@ type Buttons = {
   left: string;
   right: string;
 };
-function getActions(btns: Buttons) {
+
+type Last = Buttons & {
+  x: boolean;
+};
+function getActions(btns: Last) {
   console.log(`Acti For Button Up Is ${btns.up}`);
   console.log(`Acti For Button Right Is ${btns.right}`);
   console.log(`Acti For Button Left Is ${btns.left}`);
