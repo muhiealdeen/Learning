@@ -15,3 +15,5 @@ function getActions(btns: Buttons) {
   console.log(`Acti For Button Left Is ${btns.left}`);
   console.log(`Acti For Button Down Is ${btns.down}`);
 }
+
+getActions({ up: 'Jump', down: 'go down', left: 'fo left', right: 'got rigt' });
