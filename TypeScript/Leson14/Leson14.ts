@@ -2,16 +2,18 @@
   Data Types
   - Literal Types
 */
-function compare(num1: number, num2: number) {
+
+type num = 0 | 1 | -1;
+function compare(num1: number, num2: number): num {
   if (num1 === num2) {
-    return 'Equal';
+    return 0;
   } else if (num1 > num2) {
-    return 'Greater';
+    return 1;
   } else {
-    return 'Lesser';
+    return -1;
   }
 }
 
-console.log(compare(10, 10)); // Equal
-console.log(compare(10, 5)); // Greater
-console.log(compare(5, 10)); // Lesser
+console.log(compare(10, 10)); // 0
+console.log(compare(10, 5)); // 1
+console.log(compare(5, 10)); //-1
