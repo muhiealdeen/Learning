@@ -17,3 +17,6 @@ function compare(num1: number, num2: number): num {
 console.log(compare(10, 10)); // 0
 console.log(compare(10, 5)); // 1
 console.log(compare(5, 10)); //-1
+
+// let myNum : num = 10; // Error
+let myNum: num = 0; // Ok
