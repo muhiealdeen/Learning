@@ -13,4 +13,5 @@ function compare(num1, num2) {
 console.log(compare(10, 10));
 console.log(compare(10, 5));
 console.log(compare(5, 10));
+let myNum = 0;
 //# sourceMappingURL=Leson14.js.map
