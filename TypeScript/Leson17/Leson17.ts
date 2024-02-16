@@ -17,7 +17,12 @@ const HARD = 3;
 
 enum level {
   Kids = 15,
-  Easy,
-  Medium,
-  Hard,
+  Easy = 9,
+  Medium = 6,
+  Hard = 3,
+}
+
+let lvl: string = 'Easy';
+if (lvl === 'Easy') {
+  console.log(`The Level Is ${lvl} And the Number Of Seconds Os ${level.Easy}`);
 }
