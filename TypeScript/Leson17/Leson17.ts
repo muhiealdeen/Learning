@@ -14,3 +14,10 @@ const KIDS = 15;
 const EASY = 9;
 const MEDIUM = 6;
 const HARD = 3;
+
+enum level {
+  Kids = 15,
+  Easy,
+  Medium,
+  Hard,
+}
