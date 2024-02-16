@@ -8,3 +8,6 @@
 // let myImg = document.getElementById('myImg') as HTMLImageElement;
 // let myImg = <HTMLImageElement>document.getElementById('myImg');
 // console.log(myImg.src);
+
+let data: any = 100;
+console.log((data as string).repeat(3));
