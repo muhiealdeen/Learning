@@ -24,5 +24,5 @@ enum level {
 
 let lvl: string = 'Easy';
 if (lvl === 'Easy') {
-  console.log(`The Level Is ${lvl} And the Number Of Seconds Os ${level.Easy}`);
+  console.log(`The Level Is ${lvl} And the Number Of Seconds Is ${level.Easy}`);
 }
