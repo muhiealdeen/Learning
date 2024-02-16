@@ -6,5 +6,5 @@
 */
 
 // let myImg = document.getElementById('myImg') as HTMLImageElement;
-let myImg = <HTMLImageElement>document.getElementById('myImg');
-console.log(myImg.src);
+// let myImg = <HTMLImageElement>document.getElementById('myImg');
+// console.log(myImg.src);
