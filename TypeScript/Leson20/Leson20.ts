@@ -18,10 +18,13 @@ type A = {
   tow: number;
   three: boolean;
 };
+type B = A & {
+  four: number;
+};
 
-function getActions(btns: A) {
+function getActions(btns: B) {
   console.log(`Hello ${btns.one}`);
   console.log(`Hello ${btns.tow}`);
   console.log(`Hello ${btns.three}`);
 }
-getActions({ one: 'string', tow: 100, three: true });
+getActions({ one: 'string', tow: 100, three: true, four: 200 });
