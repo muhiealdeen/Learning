@@ -11,4 +11,17 @@
   --- If A Union Is An OR, Then An Intersection Is An AND.
 */
 
-let number: number | string;
+// let all2: number | string =100;
+
+type A = {
+  one: string;
+  tow: number;
+  three: boolean;
+};
+
+function getActions(btns: A) {
+  console.log(`Hello ${btns.one}`);
+  console.log(`Hello ${btns.tow}`);
+  console.log(`Hello ${btns.three}`);
+}
+getActions({ one: 'string', tow: 100, three: true });
