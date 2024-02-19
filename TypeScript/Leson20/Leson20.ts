@@ -27,7 +27,7 @@ type C = {
 };
 type mix = A & C;
 
-function getActions(btns: B) {
+function getActions(btns: mix) {
   console.log(`Hello ${btns.one}`);
   console.log(`Hello ${btns.tow}`);
   console.log(`Hello ${btns.three}`);
