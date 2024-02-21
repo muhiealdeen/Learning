@@ -3,19 +3,29 @@
 */
 
 let myObject: {
-  userName: string;
+  readonly userName: string;
   id: number;
-  hire: boolean;
+  hire?: boolean;
+  skils: {
+    one: string;
+    two: string;
+  };
 } = {
   userName: 'Elzero',
   id: 100,
-  hire: true,
+  // hire: true,
+  skils: {
+    one: 'HTML',
+    two: 'CSS',
+  },
 };
 
-myObject.userName = 'Osama';
+// myObject.userName = 'Osama';
 myObject.id = 200;
-myObject.hire = false;
+// myObject.hire = false;
 
 console.log(myObject.userName);
 console.log(myObject.id);
 console.log(myObject.hire);
+console.log(myObject.skils.one);
+console.log(myObject.skils.two);
