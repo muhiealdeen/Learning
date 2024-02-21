@@ -22,7 +22,7 @@ let myObject: {
 
 // myObject.userName = 'Osama';
 myObject.id = 200;
-// myObject.hire = false;
+myObject.hire = false;
 
 console.log(myObject.userName);
 console.log(myObject.id);
