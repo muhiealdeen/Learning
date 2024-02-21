@@ -2,12 +2,15 @@
 let myObject = {
     userName: 'Elzero',
     id: 100,
-    hire: true,
+    skils: {
+        one: 'HTML',
+        two: 'CSS',
+    },
 };
-myObject.userName = 'Osama';
 myObject.id = 200;
-myObject.hire = false;
 console.log(myObject.userName);
 console.log(myObject.id);
 console.log(myObject.hire);
+console.log(myObject.skils.one);
+console.log(myObject.skils.two);
 //# sourceMappingURL=Leson21.js.map
