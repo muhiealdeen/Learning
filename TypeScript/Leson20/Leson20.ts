@@ -31,6 +31,7 @@ function getActions(btns: mix) {
   console.log(`Hello ${btns.one}`);
   console.log(`Hello ${btns.tow}`);
   console.log(`Hello ${btns.three}`);
-  console.log(`Hello ${btns.four}`);
+  // console.log(`Hello ${btns.four}`);
+  console.log(`Hello ${btns.five}`);
 }
-getActions({ one: 'string', tow: 100, three: true, four: 200 });
+getActions({ one: 'string', tow: 100, three: true, five: false });
