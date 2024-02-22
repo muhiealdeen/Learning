@@ -1,40 +1,46 @@
+import { useState } from 'react';
 import { headerLogo } from '../assets//images';
 import { hamburger } from '../assets/icons';
 import { navLinks } from '../constants';
 const Nav = () => {
+  // State to manage the visibility of the mobile menu
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // Function to toggle the mobile menu
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
-      <nav className="flex justify-between items-center max-container">
+    <header className="absolute z-10 w-full py-8 padding-x">
+      <nav className="flex items-center justify-between max-container">
         <a href="/">
           <img src={headerLogo} alt="logo" width={130} height={29} />
         </a>
-        <ul className="flex-1 flex justify-center items-center gap-16 maxc-lg:hidden">
-          {/* <li className="inline-block mr-6">
-            <a href="/">Home</a>
-          </li>
-          <li className="inline-block mr-6">
-            <a href="/">Products</a>
-          </li>
-          <li className="inline-block mr-6">
-            <a href="/">About</a>
-          </li>
-          <li className="inline-block mr-6">
-            <a href="/">Contact</a>
-          </li>
-          <li className="inline-block">
-            <img src={hamburger} alt="menu" width={20} height={20} />
-          </li> */}
+        <ul
+          className={`max-lg:${
+            isMobileMenuOpen ? '' : 'hidden' // Toggle visibility based on state
+          } flex items-center justify-center flex-1 gap-16`}
+        >
           {navLinks.map((item) => (
             <li key={item.leble}>
               <a
                 href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-gray"
+                className="text-lg leading-normal font-montserrat text-slate-gray"
               >
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
+        <div className="hidden max-lg:block">
+          <img
+            src={hamburger}
+            alt="menu"
+            width={25}
+            height={25}
+            onClick={toggleMobileMenu}
+            className="cursor-pointer"
+          />
+        </div>
       </nav>
     </header>
   );
