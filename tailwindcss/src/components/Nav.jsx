@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { headerLogo } from '../assets//images';
 import { hamburger } from '../assets/icons';
-import { navLinks } from '../constants';
+import { navLinks } from '../constents';
 const Nav = () => {
   // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
