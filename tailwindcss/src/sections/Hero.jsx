@@ -1,3 +1,5 @@
+import Button from '../components/button';
+import { arrowRight } from '../assets/icons';
 const Hero = () => {
   return (
     <section
@@ -16,6 +18,7 @@ const Hero = () => {
           Discover stylish Nike Arrivals, quality comfort, and innovative for
           your active life.
         </p>
+        <Button lable="Shop Now" iconURL={arrowRight} />
       </div>
     </section>
   );
