@@ -19,6 +19,7 @@ const Hero = () => {
           your active life.
         </p>
         <Button lable="Shop Now" iconURL={arrowRight} />
+        <div className="flex flex-wrap items-start justify-start "></div>
       </div>
     </section>
   );
