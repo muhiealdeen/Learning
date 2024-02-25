@@ -1,7 +1,8 @@
 import Button from '../components/button';
 import { arrowRight } from '../assets/icons';
-import { statistics } from '../constents';
+import { shoes, statistics } from '../constents';
 import { bigShoe1 } from '../assets/images';
+import ShoesCard from '../components/ShoesCard';
 const Hero = () => {
   return (
     <section
@@ -35,7 +36,7 @@ const Hero = () => {
           ))}
         </div>
       </div>
-      <div>
+      <div className=" relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         <img
           src={bigShoe1}
           alt="Shoe collection"
@@ -43,6 +44,17 @@ const Hero = () => {
           height={610}
           className="object-contain relative z-10" // Replace 'bigShoeImge' with a valid image source
         />
+        <div>
+          {shoes.map((shoe) => (
+            <div key={shoe}>
+              <ShoesCard
+                imgURL={shoe}
+                changeBigShoeImge={() => {}}
+                bigShoeImg=""
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
