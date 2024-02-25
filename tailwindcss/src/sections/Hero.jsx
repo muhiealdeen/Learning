@@ -8,7 +8,9 @@ const Hero = () => {
       className="flex flex-col justify-center w-full min-h-screen gap-10 max-container xl:flex-row "
     >
       <div className="relative flex flex-col items-start justify-center w-full xl:w-2/5 max-xl:padding-x pt-28">
-        <p>Our Summer Collection</p>
+        <p className="text-xl font-montserrat text-coral-red">
+          Our Summer Collection
+        </p>
         <h1>
           <span>The New Arrival</span>
           <br />
@@ -21,7 +23,7 @@ const Hero = () => {
         </p>
         <Button lable="Shop Now" iconURL={arrowRight} />
         <div className="flex flex-wrap items-start justify-start w-full gap-16 mt-20">
-          {statistics.map((stat, index) => (
+          {statistics.map((stat) => (
             <div key={stat.label}>
               <p>{stat.value}</p>
               <p>{stat.label}</p>
