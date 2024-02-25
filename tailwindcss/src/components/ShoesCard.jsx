@@ -11,7 +11,7 @@ const ShoesCard = ({ imgURL, changeShoeImage, bigShoImg }) => {
       } cursor-pointer max-sm:flex-1 `}
       onClick={handleClick}
     >
-      <div>
+      <div className=" flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:sp-4">
         <img
           src={imgURL.thumbnail}
           alt="Shoe Collection"
