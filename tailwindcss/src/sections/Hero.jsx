@@ -1,6 +1,7 @@
 import Button from '../components/button';
 import { arrowRight } from '../assets/icons';
 import { statistics } from '../constents';
+import { bigShoe1 } from '../assets/images';
 const Hero = () => {
   return (
     <section
@@ -33,6 +34,15 @@ const Hero = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <img
+          src={bigShoe1}
+          alt="Shoe collection"
+          width={610}
+          height={610}
+          className="object-contain relative z-10" // Replace 'bigShoeImge' with a valid image source
+        />
       </div>
     </section>
   );
