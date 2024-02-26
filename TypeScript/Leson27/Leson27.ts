@@ -11,3 +11,7 @@ class User {
       return `Hello ${this.u} Your Salary Is ${this.s}`;
     }
   }
+  sayMsg() {
+   return`Hello ${this.u} Your Salary Is ${this.s}`;
+  }
+  let userOne =new User ('Elzero', 6000)
