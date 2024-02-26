@@ -18,3 +18,7 @@ class User {
 }
 
 let userOne = new User('Elzero', 6000);
+console.log(userOne.u);
+console.log(userOne.s);
+console.log(userOne.msg());
+console.log(userOne.sayMsg());
