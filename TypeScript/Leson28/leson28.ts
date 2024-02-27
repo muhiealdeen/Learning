@@ -15,7 +15,11 @@
 
 class User1 {
   msg: () => string;
-  constructor(private username: string, protected salary: number) {
+  constructor(
+    private username: string,
+    protected salary: number,
+    public readonly address: string,
+  ) {
     this.msg = function () {
       return `Hello ${this.username} Your Salary Is ${this.salary}`;
     };
@@ -24,7 +28,7 @@ class User1 {
     return `Hello ${this.username} Your Salary Is ${this.salary}`;
   }
 }
-let userOne1 = new User1(`Elzero`, 6000);
+let userOne1 = new User1(`Elzero`, 6000, `Egypt`);
 // console.log(userOne1.username);
 // console.log(userOne1.salary);
 console.log(userOne1.msg());
