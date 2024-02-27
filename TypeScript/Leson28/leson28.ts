@@ -14,22 +14,22 @@
 */
 
 class User1 {
-  private u: string;
-  s: number;
+  private username: string;
+  protected salary: number;
   msg: () => string;
   constructor(username: string, salary: number) {
-    this.u = username;
-    this.s = salary;
+    this.username = username;
+    this.salary = salary;
     this.msg = function () {
-      return `Hello ${this.u} Your Salary Is ${this.s}`;
+      return `Hello ${this.username} Your Salary Is ${this.salary}`;
     };
   }
   sayMsg() {
-    return `Hello ${this.u} Your Salary Is ${this.s}`;
+    return `Hello ${this.username} Your Salary Is ${this.salary}`;
   }
 }
 let userOne1 = new User1(`Elzero`, 6000);
-console.log(userOne1.u);
-console.log(userOne1.s);
+// console.log(userOne1.username);
+// console.log(userOne1.salary);
 console.log(userOne1.msg());
 console.log(userOne1.sayMsg());
