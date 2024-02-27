@@ -1,5 +1,5 @@
 "use strict";
-let el = document.getElementById("id");
+let el = document.getElementById('id');
 let userSettings1 = {
     theme: true,
     font: 'Open Sans',
