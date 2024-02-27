@@ -12,3 +12,16 @@
   - TypeScript Is A Layer On Top Of JavaScript
   - It Should Remove All Annotations And Although Access Modifiers "Private For Example"
 */
+
+class User1 {
+  u: string;
+  s: number;
+  msg: () => string;
+  constructor(username: string, salary: number) {
+    this.u = username;
+    this.s = salary;
+    this.msg = function () {
+      return `Hello ${this.u} Your Salary Is ${this.s}`;
+    };
+  }
+}
