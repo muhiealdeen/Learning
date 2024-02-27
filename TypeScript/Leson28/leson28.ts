@@ -14,12 +14,8 @@
 */
 
 class User1 {
-  private username: string;
-  protected salary: number;
   msg: () => string;
-  constructor(username: string, salary: number) {
-    this.username = username;
-    this.salary = salary;
+  constructor(private username: string, protected salary: number) {
     this.msg = function () {
       return `Hello ${this.username} Your Salary Is ${this.salary}`;
     };
