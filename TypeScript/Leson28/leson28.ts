@@ -14,7 +14,7 @@
 */
 
 class User1 {
-  u: string;
+  private u: string;
   s: number;
   msg: () => string;
   constructor(username: string, salary: number) {
@@ -24,4 +24,12 @@ class User1 {
       return `Hello ${this.u} Your Salary Is ${this.s}`;
     };
   }
+  sayMsg() {
+    return `Hello ${this.u} Your Salary Is ${this.s}`;
+  }
 }
+let userOne1 = new User1(`Elzero`, 6000);
+console.log(userOne1.u);
+console.log(userOne1.s);
+console.log(userOne1.msg());
+console.log(userOne1.sayMsg());
