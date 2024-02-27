@@ -23,18 +23,17 @@ class User3 {
   sayMsg() {
     return `Hello ${this._username} Your Salary Is ${this.salary}`;
   }
-  get username(): string {
-    return this._username;
-  }
-  set username(value: string) {
-    this._username = value;
-  }
+  // get username() {
+  //   return this._username;
+  // }
+  // set username(value: string) {
+  //   this._username = value;
+  // }
 }
-
-let userOne3 = new User3('Elzero', 6000, 'Cairo');
+let userOne3 = new User3(`Elzero`, 6000, `Egypt`);
 
 console.log(userOne3.username);
-userOne3.username = 'Ahmed';
+userOne3.username = `Ahmad `;
 console.log(userOne3.username);
 console.log(userOne3.salary);
 console.log(userOne3.msg());
