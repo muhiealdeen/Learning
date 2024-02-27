@@ -17,9 +17,9 @@ class User {
   }
 }
 
-let userOne3 = new User('Elzero', 6000);
+let userOne = new User('Elzero', 6000);
 
-console.log(userOne3.u);
-console.log(userOne3.s);
-console.log(userOne3.msg());
-console.log(userOne3.sayMsg());
+console.log(userOne.u);
+console.log(userOne.s);
+console.log(userOne.msg());
+console.log(userOne.sayMsg());
