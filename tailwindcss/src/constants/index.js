@@ -49,26 +49,39 @@ export const statistics = [
   { value: '250k+', label: 'Customers' },
 ];
 
+// constnt/index.js
 export const products = [
   {
+    id: 1,
     imgURL: shoe4,
     name: 'Nike Air Jordan-01',
     price: '$200.20',
+    description: 'This is a description for Nike Air Jordan-01.',
+    additionalInfo: 'Additional information for Nike Air Jordan-01.',
   },
   {
+    id: 2,
     imgURL: shoe5,
     name: 'Nike Air Jordan-10',
     price: '$210.20',
+    description: 'This is a description for Nike Air Jordan-10.',
+    additionalInfo: 'Additional information for Nike Air Jordan-10.',
   },
   {
+    id: 3,
     imgURL: shoe6,
     name: 'Nike Air Jordan-100',
     price: '$220.20',
+    description: 'This is a description for Nike Air Jordan-100.',
+    additionalInfo: 'Additional information for Nike Air Jordan-100.',
   },
   {
+    id: 4,
     imgURL: shoe7,
     name: 'Nike Air Jordan-001',
     price: '$230.20',
+    description: 'This is a description for Nike Air Jordan-001.',
+    additionalInfo: 'Additional information for Nike Air Jordan-001.',
   },
 ];
 

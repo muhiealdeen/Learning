@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'; // Add the missing import statement for useEffect
 import { headerLogo } from '../assets/images';
 import { hamburger } from '../assets/icons';
-import { navLinks } from '../constents';
+import { navLinks } from '../constants';
 
 const Nav = () => {
   // State to manage the visibility of the mobile menu
