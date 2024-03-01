@@ -10,8 +10,12 @@ const PopularProductCard = ({ imgURL, name, price }) => {
           (4.5)
         </p>
       </div>
-      <h3>{name}</h3>
-      <p>{price}</p>
+      <h3 className="mt-2 text-2xl leading-normal font-semibold font-palanquin">
+        {name}
+      </h3>
+      <p className="mt-2 text-2xl leading-normal font-semibold font-montserrat text-coral-red">
+        {price}
+      </p>
     </div>
   );
 };
