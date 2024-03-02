@@ -1,6 +1,9 @@
-const Button = ({ label, iconURL }) => {
+const Button = ({ label, iconURL, onClick }) => {
   return (
-    <button className="flex items-center justify-center gap-2 py-4 text-lg leading-none text-white border rounded-full px-7 font-montserrat bg-coral-red border-coral-red mt-4">
+    <button
+      onClick={onClick}
+      className="flex items-center justify-center gap-2 py-4 text-lg leading-none text-white border rounded-full px-7 font-montserrat bg-coral-red border-coral-red mt-4"
+    >
       {label}
       <img
         src={iconURL}
