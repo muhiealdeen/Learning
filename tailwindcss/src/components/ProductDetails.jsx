@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { products } from '../constants/index';
-import Button from './button'; // Assuming the correct path to the Button component
+import Button from './button';
 import { arrowRight } from '../assets/icons';
 import Nav from '../components/Nav';
 
