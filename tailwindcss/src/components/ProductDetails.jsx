@@ -7,7 +7,14 @@ import Nav from '../components/Nav';
 const ProductDetails = () => {
   const navigate = useNavigate();
   const { productId } = useParams();
-  const product = products.find((product) => product.name === productId);
+  console.log(productId, 'productId');
+
+  console.log(
+    products.map((product) => product.id),
+    'product.id',
+  );
+  const productIdNumber = parseInt(productId);
+  const product = products.find((product) => product.id === productIdNumber);
   const handleGoHome = () => {
     console.log('Go home');
     navigate('/');
