@@ -2,9 +2,6 @@ import { star } from '../assets/icons';
 import { Link } from 'react-router-dom';
 
 const PopularProductCard = ({ imgURL, name, price, id }) => {
-  // let { productId } = useParams();
-  // console.log(productId, 'productId');
-  console.log(id, 'iiiiiiiiiiiid', `/product/${id}`);
   return (
     <Link to={`/product/${id}`}>
       <div className=" flex flex-1 flex-col w-full max-sm:w-full">
