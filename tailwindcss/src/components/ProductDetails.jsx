@@ -17,19 +17,21 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className="max-w-screen-lg mx-auto p-4">
+    <div className="relative max-w-screen-lg mx-auto p-4">
       <Nav />
-      <div>
-        <img src={product.imgURL} alt={product.name} className="mb-4" />
-      </div>
-      <div>
+      <div className=" flex justify-center flex-col items-center padding-y ">
+        <img
+          src={product.imgURL}
+          alt={product.name}
+          className=" max-w-3xl mb-4 w-[480px] has-[480px]"
+        />
+
         <h2 className="text-2xl font-bold">{product.name}</h2>
         <p className="text-lg">{product.description}</p>
         <p className="text-xl font-semibold mt-4">{product.price}</p>
-        <p className="text-gray-600">{product.additionalInfo}</p>
+        <p className="text-gray-600 ">{product.additionalInfo}</p>
+        <Button label="Home page" onClick={handleGoHome} iconURL={arrowRight} />
       </div>
-
-      <Button label="Home page" onClick={handleGoHome} iconURL={arrowRight} />
     </div>
   );
 };
