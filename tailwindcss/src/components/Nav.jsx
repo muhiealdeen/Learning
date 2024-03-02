@@ -4,10 +4,8 @@ import { hamburger } from '../assets/icons';
 import { navLinks } from '../constants';
 
 const Nav = () => {
-  // State to manage the visibility of the mobile menu
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Initialize to true on larger screens
 
-  // Function to toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
