@@ -4,7 +4,7 @@ import { hamburger } from '../assets/icons';
 import { navLinks } from '../constants';
 
 const Nav = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Initialize to true on larger screens
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
