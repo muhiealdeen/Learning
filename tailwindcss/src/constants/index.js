@@ -49,7 +49,6 @@ export const statistics = [
   { value: '250k+', label: 'Customers' },
 ];
 
-// constnt/index.js
 export const products = [
   {
     id: 1,
