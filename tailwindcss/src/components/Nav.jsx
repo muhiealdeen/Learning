@@ -33,8 +33,7 @@ const Nav = () => {
         <a href="/">
           <img src={headerLogo} alt="logo" width={130} height={29} />
         </a>
-
-        {/* Conditionally render the ul based on isMobileMenuOpen state */}
+        }
         {isMobileMenuOpen && (
           <ul className="flex items-center justify-center flex-1 gap-4 md:flex-row md:gap-16">
             {/* <ul className="flex items-center justify-center flex-1 flex-col gap-4 md:flex-row md:gap-16"></ul> */}
