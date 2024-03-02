@@ -16,7 +16,9 @@ import ProductDetails from './components/ProductDetails';
 const App = () => (
   <Router>
     <main className="relative">
-      <Nav />
+      <div>
+        <Nav />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />{' '}
         <Route path="/product/:productId" element={<ProductDetails />} />
