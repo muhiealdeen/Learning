@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { products } from '../constants/index';
-
+import Button from '../components/button';
+import { arrowRight } from '../assets/icons';
 const ProductDetails = () => {
   const { productId } = useParams();
   const product = products.find((product) => product.name === productId);
@@ -16,6 +17,7 @@ const ProductDetails = () => {
       <p className="text-lg">{product.description}</p>
       <p className="text-xl font-semibold mt-4">{product.price}</p>
       <p className="text-gray-600">{product.additionalInfo}</p>
+      <Button lable="Home page" iconURL={arrowRight} />
     </div>
   );
 };
