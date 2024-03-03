@@ -1,5 +1,11 @@
 "use strict";
 class User3 {
+    get username() {
+        return this._username;
+    }
+    set username(value) {
+        this._username = value;
+    }
     constructor(_username, salary, address) {
         this._username = _username;
         this.salary = salary;
@@ -10,12 +16,6 @@ class User3 {
     }
     sayMsg() {
         return `Hello ${this._username} Your Salary Is ${this.salary}`;
-    }
-    get username() {
-        return this._username;
-    }
-    set username(value) {
-        this._username = value;
     }
 }
 let userOne3 = new User3(`Elzero`, 6000, `Egypt`);
