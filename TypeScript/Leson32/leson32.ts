@@ -20,6 +20,9 @@ class Pizza extends Food {
   }
 }
 class Burger extends Food {
+  constructor(title: string, public price: number) {
+    super(title);
+  }
   getCookingTime(): void {
     console.log(' Coooking Time For Burger Is 30 Minutes');
   }
