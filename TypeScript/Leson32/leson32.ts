@@ -27,3 +27,9 @@ class Burger extends Food {
     console.log(' Coooking Time For Burger Is 30 Minutes');
   }
 }
+
+let PizzaOne = new Pizza('Awesome Pizza', 100);
+
+console.log(PizzaOne.title);
+console.log(PizzaOne.price);
+PizzaOne.getCookingTime();
