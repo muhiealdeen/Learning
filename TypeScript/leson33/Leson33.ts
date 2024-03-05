@@ -13,8 +13,12 @@
 */
 class Player {
   constructor(public name: string) {}
-
   attack(): void {
     console.log(`Attacking Now`);
+  }
+}
+class Amazon extends Player {
+  constructor(name: string, public spears: number) {
+    super(name);
   }
 }
