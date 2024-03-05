@@ -13,7 +13,7 @@
 */
 class Player {
   constructor(public name: string) {}
-  attacking(): void {
+  attack(): void {
     console.log(`Attacking Now`);
   }
 }
@@ -21,7 +21,7 @@ class Amazon extends Player {
   constructor(name: string, public spears: number) {
     super(name);
   }
-  attack(): void {
+  override attack(): void {
     // super.attack();
     console.log(`Attacking With ${this.spears} Spears`);
     this.spears--;
@@ -31,7 +31,7 @@ class Barbarian extends Player {
   constructor(name: string, public axeDurability: number) {
     super(name);
   }
-  attack(): void {
+  override attack(): void {
     // super.attack();
     console.log(`Attacking With ${this.axeDurability} Spears`);
     this.axeDurability--;
