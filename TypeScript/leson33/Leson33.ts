@@ -13,7 +13,7 @@
 */
 class Player {
   constructor(public name: string) {}
-  attack(): void {
+  attacking(): void {
     console.log(`Attacking Now`);
   }
 }
