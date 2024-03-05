@@ -37,3 +37,8 @@ class Barbarian extends Player {
     this.axeDurability--;
   }
 }
+
+let barOne = new Barbarian('Muhie', 100);
+console.log(barOne.name);
+barOne.attack();
+console.log(barOne.axeDurability);
