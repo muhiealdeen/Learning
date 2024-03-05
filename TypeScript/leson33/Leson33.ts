@@ -21,4 +21,9 @@ class Amazon extends Player {
   constructor(name: string, public spears: number) {
     super(name);
   }
+  attack(): void {
+    super.attack();
+    console.log(`Attacking With ${this.spears} Spears`);
+    this.spears--;
+  }
 }
