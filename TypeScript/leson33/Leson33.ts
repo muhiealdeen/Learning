@@ -11,10 +11,10 @@
 
   --- noImplicitOverride
 */
-class Player { 
-  constructor (public name: string) {
-    attack(): void {
-      console.log(`Attacking Now`);
-    }
+class Player {
+  constructor(public name: string) {}
+
+  attack(): void {
+    console.log(`Attacking Now`);
   }
-  } 
+}
