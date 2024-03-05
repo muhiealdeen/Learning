@@ -3,7 +3,7 @@ class Player {
     constructor(name) {
         this.name = name;
     }
-    attack() {
+    attacking() {
         console.log(`Attacking Now`);
     }
 }
@@ -13,7 +13,6 @@ class Amazon extends Player {
         this.spears = spears;
     }
     attack() {
-        super.attack();
         console.log(`Attacking With ${this.spears} Spears`);
         this.spears--;
     }
@@ -24,7 +23,6 @@ class Barbarian extends Player {
         this.axeDurability = axeDurability;
     }
     attack() {
-        super.attack();
         console.log(`Attacking With ${this.axeDurability} Spears`);
         this.axeDurability--;
     }
