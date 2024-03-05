@@ -27,3 +27,13 @@ class Amazon extends Player {
     this.spears--;
   }
 }
+class Barbarian extends Player {
+  constructor(name: string, public axeDurability: number) {
+    super(name);
+  }
+  attack(): void {
+    super.attack();
+    console.log(`Attacking With ${this.axeDurability} Spears`);
+    this.axeDurability--;
+  }
+}
