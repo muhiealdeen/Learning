@@ -22,7 +22,7 @@ class Amazon extends Player {
     super(name);
   }
   attack(): void {
-    super.attack();
+    // super.attack();
     console.log(`Attacking With ${this.spears} Spears`);
     this.spears--;
   }
@@ -32,7 +32,7 @@ class Barbarian extends Player {
     super(name);
   }
   attack(): void {
-    super.attack();
+    // super.attack();
     console.log(`Attacking With ${this.axeDurability} Spears`);
     this.axeDurability--;
   }
