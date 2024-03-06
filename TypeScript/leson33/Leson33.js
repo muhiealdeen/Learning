@@ -23,7 +23,7 @@ class Barbarian extends Player {
         this.axeDurability = axeDurability;
     }
     attack() {
-        console.log(`Attacking With ${this.axeDurability} Spears`);
+        console.log(`Attacking With ${this.axeDurability} Axes`);
         this.axeDurability--;
     }
 }
