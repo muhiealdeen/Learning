@@ -3,7 +3,7 @@ class Player {
     constructor(name) {
         this.name = name;
     }
-    attacking() {
+    attack() {
         console.log(`Attacking Now`);
     }
 }
@@ -31,4 +31,8 @@ let barOne = new Barbarian('Muhie', 100);
 console.log(barOne.name);
 barOne.attack();
 console.log(barOne.axeDurability);
+let AmazonOne = new Amazon('Zaid', 5);
+console.log(AmazonOne.name);
+AmazonOne.attack();
+console.log(AmazonOne.spears);
 //# sourceMappingURL=Leson33.js.map
