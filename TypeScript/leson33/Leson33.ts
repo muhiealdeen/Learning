@@ -33,7 +33,7 @@ class Barbarian extends Player {
   }
   override attack(): void {
     // super.attack();
-    console.log(`Attacking With ${this.axeDurability} Spears`);
+    console.log(`Attacking With ${this.axeDurability} Axes`);
     this.axeDurability--;
   }
 }
