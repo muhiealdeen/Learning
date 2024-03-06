@@ -42,3 +42,5 @@ let barOne = new Barbarian('Muhie', 100);
 console.log(barOne.name);
 barOne.attack();
 console.log(barOne.axeDurability);
+
+let AmazonOne = new Amazon('Zaid', 5);
