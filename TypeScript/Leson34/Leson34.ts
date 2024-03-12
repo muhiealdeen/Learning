@@ -19,3 +19,6 @@ function returnString(val: string): string {
 function returnBoolean(val: boolean): boolean {
   return val;
 }
+console.log(returnNumber(12));
+console.log(returnString('Hello'));
+console.log(returnBoolean(true));
