@@ -26,3 +26,7 @@ console.log(returnBoolean(true));
 function returnType<GenericType>(val: GenericType): GenericType {
   return val;
 }
+
+console.log(returnType(12));
+console.log(returnType('Hello'));
+console.log(returnType(true));
