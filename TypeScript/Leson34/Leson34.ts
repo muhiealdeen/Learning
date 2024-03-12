@@ -27,6 +27,6 @@ function returnType<GenericType>(val: GenericType): GenericType {
   return val;
 }
 
-console.log(returnType(12));
-console.log(returnType('Hello'));
-console.log(returnType(true));
+console.log(returnType<number>(12));
+console.log(returnType<string>('Hello'));
+console.log(returnType<boolean>(true));
