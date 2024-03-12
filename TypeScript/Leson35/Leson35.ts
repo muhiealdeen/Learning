@@ -19,3 +19,9 @@ function textType<T>(val: T): string {
 }
 console.log(textType<number>(10));
 console.log(textType<string>('Hello'));
+
+function multipleType<T, S>(valueOne: T, valueTwo: S): string {
+  return `The First Value is ${valueOne} The second Type Is ${valueTwo}`;
+}
+console.log(multipleType<string, number>('Elzero', 10));
+console.log(multipleType<string, boolean>('Hello', true));
