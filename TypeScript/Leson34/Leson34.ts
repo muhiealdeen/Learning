@@ -30,3 +30,4 @@ function returnType<GenericType>(val: GenericType): GenericType {
 console.log(returnType<number>(12));
 console.log(returnType<string>('Hello'));
 console.log(returnType<boolean>(true));
+console.log(returnType<number[]>([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
