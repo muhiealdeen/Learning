@@ -22,3 +22,7 @@ function returnBoolean(val: boolean): boolean {
 console.log(returnNumber(12));
 console.log(returnString('Hello'));
 console.log(returnBoolean(true));
+
+function returnType<GenericType>(val: GenericType): GenericType {
+  return val;
+}
