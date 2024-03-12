@@ -12,4 +12,9 @@ function textType(val) {
 }
 console.log(textType(10));
 console.log(textType('Hello'));
+function multipleType(valueOne, valueTwo) {
+    return `The First Value is ${valueOne} The second Type Is ${valueTwo}`;
+}
+console.log(multipleType('Elzero', 10));
+console.log(multipleType('Hello', true));
 //# sourceMappingURL=Leson35.js.map
