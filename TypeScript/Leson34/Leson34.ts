@@ -9,3 +9,13 @@
   --- Generic Methods
   --- Generic Interfaces
 */
+
+function returnNumber(val: number): number {
+  return val;
+}
+function returnString(val: string): string {
+  return val;
+}
+function returnBoolean(val: boolean): boolean {
+  return val;
+}
