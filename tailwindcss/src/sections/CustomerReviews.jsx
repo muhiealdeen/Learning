@@ -5,7 +5,7 @@ const CustomerReviews = () => {
         What Our
         <span className="text-coral-red"> Customer</span> Say?
       </h3>
-      <p>
+      <p className="info-text m-auto mt-4 max-w-lg text-center">
         Here genuine stories from our satisfied customers about their
         exceptional experience with us.
       </p>
