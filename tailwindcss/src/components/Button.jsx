@@ -15,12 +15,6 @@ const Button = ({
           ? ` ${backgroundColor} ${textColor} ${borderColor}`
           : `text-white  bg-coral-red border-coral-red mt-4`
       }  rounded-full`}
-      //  className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
-      // ${
-      //   backgroundColor
-      //     ? `${backgroundColor} ${textColor} ${borderColor}`
-      //     : 'bg-coral-red text-white border-coral-red'
-      // } rounded-full `}
     >
       {label}
       {iconURL && (
