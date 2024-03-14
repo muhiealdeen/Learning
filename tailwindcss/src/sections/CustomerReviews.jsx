@@ -9,6 +9,7 @@ const CustomerReviews = () => {
         Here genuine stories from our satisfied customers about their
         exceptional experience with us.
       </p>
+      <div className=" mt:2 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14"></div>
     </section>
   );
 };
