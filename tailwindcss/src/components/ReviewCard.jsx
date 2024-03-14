@@ -1,5 +1,5 @@
 const ReviewCard = () => {
-  return <div>ReviewCard</div>;
+  return <div className=""></div>;
 };
 
 export default ReviewCard;
