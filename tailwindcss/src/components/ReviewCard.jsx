@@ -1,3 +1,5 @@
+import { star } from '../assets/icons';
+
 const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
   return (
     <div className="flex justify-center items-center flex-col">
@@ -7,7 +9,15 @@ const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
         className=" rounded-full object-cover w-[120px] h-[120px]"
       />
       <p>{feedback}</p>
-
+      <div>
+        <img
+          src={star}
+          width={24}
+          height={24}
+          className="object-contain m-0"
+          alt=""
+        />
+      </div>
     </div>
   );
 };
