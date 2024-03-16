@@ -10,13 +10,8 @@ const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
       />
       <p>{feedback}</p>
       <div>
-        <img
-          src={star}
-          width={24}
-          height={24}
-          className="object-contain m-0"
-          alt=""
-        />
+        <img src={star} width={24} height={24} className="object-contain m-0" />
+        <p>({rating})</p>
       </div>
     </div>
   );
