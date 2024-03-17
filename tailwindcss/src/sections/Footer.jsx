@@ -1,5 +1,10 @@
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className="max-container">
+      <div></div>
+      Footer
+    </footer>
+  );
 };
 
 export default Footer;
