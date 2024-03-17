@@ -1,5 +1,5 @@
 const Subscribe = () => {
-  return <div>Subscribe</div>;
+  return <section>Subscribe</section>;
 };
 
 export default Subscribe;
