@@ -1,5 +1,9 @@
 const Subscribe = () => {
-  return <section>Subscribe</section>;
+  return (
+    <section className=" max-container flex justfy-between items-center max-lg:flex-col gap-10">
+      Subscribe
+    </section>
+  );
 };
 
 export default Subscribe;
