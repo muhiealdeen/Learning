@@ -21,4 +21,4 @@ class Collection<T> {
   }
 }
 
-let itemOne = new Collection();
+let itemOne = new Collection<Book>();
