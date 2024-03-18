@@ -22,3 +22,4 @@ class Collection<T> {
 }
 
 let itemOne = new Collection<Book>();
+itemOne.add({ itemType: 'Book', title: 'Atomic Habits', isbn: 12345 });
