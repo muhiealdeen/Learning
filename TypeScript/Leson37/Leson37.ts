@@ -14,9 +14,11 @@ interface Game {
   style: string;
   price: number;
 }
-class Colection<T> {
+class Collection<T> {
   public data: T[] = [];
   add(itme: T): void {
     this.data.push(itme);
   }
 }
+
+let itemOne = new Collection();
