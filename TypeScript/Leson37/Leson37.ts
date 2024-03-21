@@ -26,7 +26,7 @@ itemOne.add({ itemType: 'Book', title: 'Atomic Habits', isbn: 12345 });
 itemOne.add({ itemType: 'Book', title: 'Follow Your Heart', isbn: 54321 });
 console.log(itemOne);
 
-let itemTwo = new Collection();
+let itemTwo = new Collection<Game>();
 itemTwo.add({
   itemType: 'Book',
   title: 'Uncharted',
