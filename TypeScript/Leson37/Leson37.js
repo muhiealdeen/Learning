@@ -7,6 +7,9 @@ class Collection {
         this.data.push(itme);
     }
 }
+let itemOne = new Collection();
+itemOne.add({ itemType: 'Book', title: 'Atomic Habits', isbn: 12345 });
+itemOne.add({ itemType: 'Book', title: 'Follow Your Heart', isbn: 54321 });
 let itemTwo = new Collection();
 itemTwo.add({
     itemType: 'Book',
