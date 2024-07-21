@@ -29,3 +29,6 @@ EXPOSE 3000
 
 # Start the Next.js app in development mode
 CMD ["npm", "run", "dev"]
+
+#===========================================
+
