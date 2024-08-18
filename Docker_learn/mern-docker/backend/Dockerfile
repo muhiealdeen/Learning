@@ -10,6 +10,6 @@ COPY package*.json ./
 # USER app
 RUN npm install
 COPY . .
-EXPOSE 5173
-CMD npm run dev
+EXPOSE 8000
+CMD npm start 
 
