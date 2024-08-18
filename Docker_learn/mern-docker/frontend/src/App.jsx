@@ -19,9 +19,6 @@ function App() {
           <Link to="/create" className="navbar_link">
             Share
           </Link>
-          <Link to="/create" className="navbar_link">
-            Test
-          </Link>
         </div>
       </nav>
 
