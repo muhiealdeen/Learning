@@ -1,4 +1,4 @@
-virsion: '3.8'
+version: '3.8'
 
 services:
   frontend:
@@ -7,18 +7,22 @@ services:
       dockerfile: Dockerfile
     ports:
       - '3000:3000'
-  develop:
-    watch:
-      - path: ./package.json
-        action: rebuild
-      - path: ./next.config.js
-        action: rebuild
-      - path: ./package-lock.json
-        action: rebuild
-      - path: .
-        target: /app
-        action: sync
-  environment: DB_URL=mongodb+srv://sujata:rnZzJjIDr3bIDymV@cluster0.hnn88vs.mongodb.net/
+    develop:
+      watch:
+        - path: ./package.json
+          action: rebuild
+        - path: ./next.config.js
+          action: rebuild
+        - path: ./package-lock.json
+          action: rebuild
+        - path: .
+          target: /app
+          action: sync
+    environment:
+      # we're using MongoDB atlas so we need to pass in the connection string
+      DB_URL: mongodb+srv://sujata:rnZzJjIDr3bIDymV@cluster0.hnn88vs.mongodb.net/
+  # environment:
+  #   - DB_URL=mongodb+srv://sujata:rnZzJjIDr3bIDymV@cluster0.hnn88vs.mongodb.net/
 
 volumes:
   tasked:
